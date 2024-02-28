@@ -14,6 +14,8 @@
 		8B162EBC2B8898FA00567C4A /* BeaconTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EBB2B8898FA00567C4A /* BeaconTestTests.swift */; };
 		8B162EC62B8898FA00567C4A /* BeaconTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EC52B8898FA00567C4A /* BeaconTestUITests.swift */; };
 		8B162EC82B8898FA00567C4A /* BeaconTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EC72B8898FA00567C4A /* BeaconTestUITestsLaunchTests.swift */; };
+		8B162EDE2B8CAFFC00567C4A /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EDD2B8CAFFC00567C4A /* BeaconManager.swift */; };
+		8B162EE02B8DDAB300567C4A /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EDF2B8DDAB300567C4A /* BeaconInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		8B162EC12B8898FA00567C4A /* BeaconTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B162EC52B8898FA00567C4A /* BeaconTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTestUITests.swift; sourceTree = "<group>"; };
 		8B162EC72B8898FA00567C4A /* BeaconTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B162ED62B889E5A00567C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8B162EDD2B8CAFFC00567C4A /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		8B162EDF2B8DDAB300567C4A /* BeaconInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +99,11 @@
 		8B162EA92B8898F900567C4A /* BeaconTest */ = {
 			isa = PBXGroup;
 			children = (
+				8B162ED62B889E5A00567C4A /* Info.plist */,
 				8B162EAA2B8898F900567C4A /* BeaconTestApp.swift */,
 				8B162EAC2B8898F900567C4A /* ContentView.swift */,
+				8B162EDD2B8CAFFC00567C4A /* BeaconManager.swift */,
+				8B162EDF2B8DDAB300567C4A /* BeaconInfo.swift */,
 				8B162EAE2B8898FA00567C4A /* Assets.xcassets */,
 				8B162EB02B8898FA00567C4A /* Preview Content */,
 			);
@@ -257,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B162EDE2B8CAFFC00567C4A /* BeaconManager.swift in Sources */,
 				8B162EAD2B8898F900567C4A /* ContentView.swift in Sources */,
 				8B162EAB2B8898F900567C4A /* BeaconTestApp.swift in Sources */,
+				8B162EE02B8DDAB300567C4A /* BeaconInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +435,8 @@
 				DEVELOPMENT_TEAM = YH7UK78RLT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeaconTest/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Yes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +466,8 @@
 				DEVELOPMENT_TEAM = YH7UK78RLT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeaconTest/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Yes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

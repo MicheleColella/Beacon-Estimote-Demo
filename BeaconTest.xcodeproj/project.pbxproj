@@ -16,6 +16,7 @@
 		8B162EC82B8898FA00567C4A /* BeaconTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EC72B8898FA00567C4A /* BeaconTestUITestsLaunchTests.swift */; };
 		8B162EDE2B8CAFFC00567C4A /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EDD2B8CAFFC00567C4A /* BeaconManager.swift */; };
 		8B162EE02B8DDAB300567C4A /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B162EDF2B8DDAB300567C4A /* BeaconInfo.swift */; };
+		8BCE7C2D2B931C5F005F7D5D /* VibrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE7C2C2B931C5F005F7D5D /* VibrationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8B162ED62B889E5A00567C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8B162EDD2B8CAFFC00567C4A /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		8B162EDF2B8DDAB300567C4A /* BeaconInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
+		8BCE7C2C2B931C5F005F7D5D /* VibrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				8B162ED62B889E5A00567C4A /* Info.plist */,
 				8B162EAA2B8898F900567C4A /* BeaconTestApp.swift */,
 				8B162EAC2B8898F900567C4A /* ContentView.swift */,
+				8BCE7C2C2B931C5F005F7D5D /* VibrationManager.swift */,
 				8B162EDD2B8CAFFC00567C4A /* BeaconManager.swift */,
 				8B162EDF2B8DDAB300567C4A /* BeaconInfo.swift */,
 				8B162EAE2B8898FA00567C4A /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				8B162EDE2B8CAFFC00567C4A /* BeaconManager.swift in Sources */,
 				8B162EAD2B8898F900567C4A /* ContentView.swift in Sources */,
+				8BCE7C2D2B931C5F005F7D5D /* VibrationManager.swift in Sources */,
 				8B162EAB2B8898F900567C4A /* BeaconTestApp.swift in Sources */,
 				8B162EE02B8DDAB300567C4A /* BeaconInfo.swift in Sources */,
 			);

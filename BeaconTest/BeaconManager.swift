@@ -36,6 +36,7 @@ class BeaconManager: NSObject, ObservableObject, CLLocationManagerDelegate {
                 DispatchQueue.main.async {
                     var updatedBeacon = self.beaconDataManager.beaconInfos[index]
                     updatedBeacon.distance = beacon.accuracy
+                    updatedBeacon.distanceDescription = self.updateDistanceDescription(with: beacon)
                     
                     // Aggiorna l'array detectedBeacons solo se la distanza è minore o uguale di 10 metri
                     if beacon.accuracy <= 10.0 {
@@ -63,4 +64,18 @@ class BeaconManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             self.locationManager?.startRangingBeacons(satisfying: CLBeaconIdentityConstraint(uuid: uuid, major: CLBeaconMajorValue(beaconInfo.major), minor: CLBeaconMinorValue(beaconInfo.minor)))
         }
     }
+    
+    private func updateDistanceDescription(with beacon: CLBeacon) -> String {
+        switch beacon.proximity {
+        case .immediate:
+            return "Molto vicino"
+        case .near:
+            return "Vicino"
+        case .far:
+            return "Lontano"
+        default:
+            return "Fuori portata"
+        }
+    }
+
 }

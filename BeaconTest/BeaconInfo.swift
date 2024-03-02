@@ -17,6 +17,7 @@ struct BeaconInfo: Identifiable {
     let major       : Int
     let minor       : Int
     var distance: Double?
+    var distanceDescription: String?
 }
 
 
@@ -38,7 +39,13 @@ class BeaconDataManager {
                                                 description: "Una descrizione di Mint Cocktail",
                                                 proximityUUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
                                                 major: 52575,
-                                                minor: 36583)
+                                                minor: 36583),
+                                     BeaconInfo(name: "Quadro 4",
+                                                color: Color(red: 84/255, green: 77/255, blue: 160/255),
+                                                description: "Una descrizione di Blueberry Pie 2",
+                                                proximityUUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                                                major: 32228,
+                                                minor: 14765)
     ]
 }
 
